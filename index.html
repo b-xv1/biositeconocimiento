@@ -14,7 +14,6 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      letter-spacing: 0.3px; /* Interletrado general sutil */
     }
 
     .container {
@@ -53,9 +52,7 @@
       flex-direction: column;
       align-items: center;
       padding: 0 15px;
-      text-align: justify;
       line-height: 1.3;
-      letter-spacing: 0.2px;
     }
 
     .title {
@@ -64,27 +61,23 @@
       color: #000000;
       margin: -13px 0 0;
       text-align: center;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
       line-height: 1.2;
     }
 
-    .subtitle {
-      font-size: 18px;
+    .subtitle, .small-text {
+      font-size: 16px;
       color: #000000;
       margin: 5px 0 10px;
+      max-width: 1000px;
       text-align: justify;
-      line-height: 1.3;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
     }
 
     .small-text {
       font-size: 14px;
-      color: #000000;
       margin-bottom: 15px;
-      max-width: 1000px;
-      text-align: justify;
-      line-height: 1.3;
-      letter-spacing: 0.2px;
     }
 
     .buttons {
@@ -114,6 +107,12 @@
       transform: scale(1.05);
       box-shadow: 0 0 16px #ffffffaa;
     }
+
+    @media (max-width: 600px) {
+      .subtitle, .small-text {
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -132,7 +131,9 @@
       <h3 class="subtitle">Mis colecciones en aprendizaje</h3>
       <h3 class="subtitle">♓🔮🪬🖤🩶🤍🕯️🧿📿📚🏛️🖋️📄🌲☕</h3>
       <p class="subtitle">
-        Lectora. Piscis. Maestra en artes ocultas. Autoliderazgo y autoconocimiento: Filosofía, psicología, sabiduría, mentalidad, conocimiento, esoterismo, ocultismo, misticismo, espiritualidad, ciencias de la mente, ciencias ocultas, crecimiento personal, crecimiento mental, crecimiento espiritual, gestión de emociones, inteligencia emocional. Creencias y religión. Mis blogs y mis colecciones.
+        <strong>
+          Lectora. Piscis. Maestra en artes ocultas. Autoliderazgo y autoconocimiento: Filosofía, psicología, sabiduría, mentalidad, conocimiento, esoterismo, ocultismo, misticismo, espiritualidad, ciencias de la mente, ciencias ocultas, crecimiento personal, crecimiento mental, crecimiento espiritual, gestión de emociones, inteligencia emocional. Creencias y religión. Mis blogs y mis colecciones.
+        </strong>
       </p>
       <div class="small-text">
         Listas de temas, temarios completos, información, investigación, educación, análisis, criterio, estudio, frases, citas, escritos, pensamientos, fragmentos, meditaciones, reflexiones, enciclopedias, artículos, libros. 
